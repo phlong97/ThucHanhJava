@@ -14,7 +14,7 @@ import java.sql.Date;
 public class NhanVienDTO {
 
     private String MaNV,HoTen,SoDT;
-    Date NgayVL;
+    private Date NgayVL;
     /**
      * @param MaNV the MaNV to set
      */
