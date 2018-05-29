@@ -11,6 +11,6 @@ package PL;
  */
 public class UIMain {
     public static void main(String[] args) throws Exception {
-        new GUI_NHAN_VIEN().setVisible(true);
+        new GUI_KHACH_HANG().setVisible(true);
     }
 }

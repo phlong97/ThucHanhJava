@@ -35,14 +35,12 @@ public class NhanVienDTO {
     public void setSoDT(String SoDT) {
         this.SoDT = SoDT;
     }
-
     /**
      * @param NgayVL the NgayVL to set
      */
     public void setNgayVL(Date NgayVL) {
         this.NgayVL = NgayVL;
-    }
-    
+    }   
     
     public String getMaNV(){
         return MaNV;

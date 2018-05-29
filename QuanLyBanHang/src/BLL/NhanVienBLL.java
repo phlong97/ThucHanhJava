@@ -14,7 +14,16 @@ import java.util.ArrayList;
  * @author longl
  */
 public class NhanVienBLL {
-    public static ArrayList<NhanVienDTO> NhanVienAll() throws Exception{
-        return NhanVienDAL.NhanVienAll();
+    public static ArrayList<NhanVienDTO> NhanVien_DS() throws Exception{
+        return NhanVienDAL.NhanVien_DS();
+    }
+    public static void NhanVien_Add(NhanVienDTO nv) throws Exception{
+        NhanVienDAL.NhanVien_Add(nv);
+    }
+    public static void NhanVien_Delete(NhanVienDTO nv) throws Exception{
+        NhanVienDAL.NhanVien_Delete(nv);
+    }
+    public static void NhanVien_Update(NhanVienDTO nv) throws Exception{
+        NhanVienDAL.NhanVien_Update(nv);
     }
 }

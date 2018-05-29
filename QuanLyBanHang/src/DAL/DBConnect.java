@@ -16,9 +16,11 @@ import java.sql.Statement;
  *
  * @author longl
  */
-public class DBConnect {     
-    String dbURL = "jdbc:sqlserver://localhost;databaseName=QLBH;user=sa;password=sa";
-    Connection conn;   
+public class  DBConnect {     
+    String dbURL = "jdbc:sqlserver://localhost;databaseName=QLBH";
+    String dbUSER = "sa";
+    String dbPASSWORD = "sa";
+    static Connection conn;   
     public void displayError(SQLException ex){
        System.out.println(" Error Message:" + ex.getMessage());
        System.out.println(" SQL State:" + ex.getSQLState());
@@ -26,8 +28,9 @@ public class DBConnect {
     }
     public Connection getConnection() throws Exception
     {        
+        
         try{
-            conn = DriverManager.getConnection(dbURL);               
+            conn = DriverManager.getConnection(dbURL,dbUSER,dbPASSWORD);               
         }
         catch(SQLException ex){
             throw new Exception("Khong the ket noi! - " + ex.getMessage());
